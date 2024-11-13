@@ -1,0 +1,145 @@
+/* Logo CSS */
+.logo h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #00FF00; /* Neon Green */
+  font-size: 1em;
+  text-shadow: 2px 2px 4px #000000; /* Creates a spray-paint effect */
+  position: relative;
+   display: inline-block;
+  text-transform: uppercase;
+}
+
+.logo h1::after {
+  content: '';
+  position: relative;
+  left: 3px;
+  top: 3px;
+  width: 20%;
+  height: 4px;
+  background-color: #000;
+  opacity: 0.8;
+  transform: rotate(-2deg); /* Small graffiti-style underline */
+}
+/* Navbar CSS */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: #000;
+  padding: 1em;
+}
+
+nav ul li {
+  margin: 0 1em;
+}
+
+nav ul li a {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00FF00; /* Neon Green on hover */
+}
+/* Product Grid CSS */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5em;
+  padding: 2em;
+  background-color: #fff;
+}
+
+.product {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 1em;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.product button {
+  background-color: #00FF00;
+  color: #000;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+/* Carousel CSS */
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slides img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+
+/* Neon Effect Buttons */
+button {
+  background-color: #00FF00;
+  color: #000;
+  border: 2px solid #00FF00;
+  padding: 0.5em 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: box-shadow 0.3s, color 0.3s;
+}
+
+button:hover {
+  color: #00FF00;
+  background-color: #000;
+  box-shadow: 0 0 8px #00FF00;
+}
+/* Footer CSS */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 2em;
+  text-align: center;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 0.5em;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00FF00;
+}
+
